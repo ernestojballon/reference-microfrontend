@@ -10,7 +10,7 @@
     "build:webpack": "webpack --mode=production",
     "build:types": "tsc",
     "start:dev":"npm run start",
-    "pre-commit":"echo 'pre-commit'"
+    "pre-commit":"npm run test"
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",

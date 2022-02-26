@@ -14,7 +14,7 @@
     "coverage": "cross-env BABEL_ENV=test jest --coverage",
     "build:types": "tsc",
     "start:dev": "npm run start",
-    "pre-commit":"echo 'pre-commit'"
+    "pre-commit":"npm run test"
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",
