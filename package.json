@@ -1,0 +1,16 @@
+{
+  "name": "example-app",
+  "version": "1.0.0",
+  "description": "sample app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" ",
+    "prepare": "husky install"
+  },
+  "author": "ernesto ballon",
+  "license": "ISC",
+  "devDependencies": {
+    "lerna": "^4.0.0",
+    "husky": "^7.0.0"
+  }
+}

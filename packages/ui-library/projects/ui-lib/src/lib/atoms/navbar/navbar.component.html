@@ -1,0 +1,9 @@
+<div class="buttonContainer" name="fontStyle" aria-label="Font Style">
+  <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
+
+  <lib-button-component *ngFor="let action of actions"
+    [text]="action.text"
+    [color]="action.color"
+    [onClick]="action.onclick"
+      ></lib-button-component>
+</div>
