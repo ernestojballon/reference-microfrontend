@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "pre-commit": "npx lerna run --concurrency 1 --stream pre-commit --since HEAD --exclude-dependents",
+    "pre-push": "npx lerna run --concurrency 1 --stream test --since origin/master --exclude-dependents",
     "prepare": "husky install",
     "lint-staged":"lint-staged"
   },
