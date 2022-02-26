@@ -13,7 +13,8 @@
     "watch-tests": "cross-env BABEL_ENV=test jest --watch",
     "coverage": "cross-env BABEL_ENV=test jest --coverage",
     "build:types": "tsc",
-    "start:dev": "npm run start"
+    "start:dev": "npm run start",
+    "pre-commit":"echo 'pre-commit'"
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",

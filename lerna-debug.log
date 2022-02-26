@@ -1,0 +1,27 @@
+0 silly argv {
+0 silly argv   _: [ 'run' ],
+0 silly argv   concurrency: 1,
+0 silly argv   stream: true,
+0 silly argv   since: 'HEAD',
+0 silly argv   'exclude-dependents': true,
+0 silly argv   excludeDependents: true,
+0 silly argv   lernaVersion: '4.0.0',
+0 silly argv   '$0': '/Users/ernestoballon/Documents/single-spa/reference-microfrontend/node_modules/.bin/lerna',
+0 silly argv   script: 'pre-commit'
+0 silly argv }
+1 notice cli v4.0.0
+2 verbose rootPath /Users/ernestoballon/Documents/single-spa/reference-microfrontend
+3 info versioning independent
+4 error JSONError: Unexpected string in JSON at position 537 while parsing '{  "name": "mf-emitter",  "version": "' in packages/mf-emitter/package.json
+4 error
+4 error [0m [90m 14 |[39m     [32m"pre-commit"[39m[33m:[39m[32m"echo 'pre-commit'"[39m[0m
+4 error [0m [90m 15 |[39m[0m
+4 error [0m[31m[1m>[22m[39m[90m 16 |[39m   [32m"private"[39m[33m:[39m [36mtrue[39m[33m,[39m[0m
+4 error [0m [90m    |[39m   [31m[1m^[22m[39m[0m
+4 error [0m [90m 17 |[39m   [32m"dependencies"[39m[33m:[39m {[0m
+4 error [0m [90m 18 |[39m     [32m"@angular/animations"[39m[33m:[39m [32m"~13.2.0"[39m[33m,[39m[0m
+4 error [0m [90m 19 |[39m     [32m"@angular/common"[39m[33m:[39m [32m"~13.2.0"[39m[33m,[39m[0m
+4 error
+4 error     at parseJson (/Users/ernestoballon/Documents/single-spa/reference-microfrontend/node_modules/parse-json/index.js:29:21)
+4 error     at parse (/Users/ernestoballon/Documents/single-spa/reference-microfrontend/node_modules/load-json-file/index.js:15:9)
+4 error     at module.exports (/Users/ernestoballon/Documents/single-spa/reference-microfrontend/node_modules/load-json-file/index.js:18:47)

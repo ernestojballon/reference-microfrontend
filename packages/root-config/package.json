@@ -9,7 +9,8 @@
     "build": "concurrently npm:build:*",
     "build:webpack": "webpack --mode=production",
     "build:types": "tsc",
-    "start:dev":"npm run start"
+    "start:dev":"npm run start",
+    "pre-commit":"echo 'pre-commit'"
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",

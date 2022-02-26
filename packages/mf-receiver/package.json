@@ -10,7 +10,8 @@
     "test": "ng test",
     "build:single-spa:mf-receiver": "ng build mf-receiver --configuration production",
     "serve:single-spa:mf-receiver": "ng s --project mf-receiver --disable-host-check --port 4201 --live-reload false",
-    "start:dev":"npm run serve:single-spa:mf-receiver"
+    "start:dev":"npm run serve:single-spa:mf-receiver",
+    "pre-commit":"echo 'pre-commit'"
   },
   "private": true,
   "dependencies": {

@@ -12,7 +12,8 @@
     "build-storybook": "npm run docs:json && build-storybook",
     "build:scss": "scss-bundle -p scss-bundle.config.json",
     "build:lib" : "npm run build --project ui-lib && npm run build:scss",
-    "start:dev": "npm run build:lib && npm run storybook"
+    "start:dev": "npm run build:lib && npm run storybook",
+    "pre-commit":"echo 'pre-commit'"
   },
   "private": true,
   "dependencies": {
