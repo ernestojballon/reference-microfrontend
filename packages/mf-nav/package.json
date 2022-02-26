@@ -14,7 +14,7 @@
       "lint": "npx eslint '**/*.{js,ts,tsx,html,css}' --quiet --fix",
       "prettier": "npx prettier --write .",
       "stylelint": "npx stylelint '**/*.scss' --custom-syntax postcss-scss --quiet --fix",
-      "precommit": "npx lint-staged",
+      "pre-commit": "npx lint-staged",
       "pre-push": "npm run lint && npm run prettier"
    },
    "private": true,
