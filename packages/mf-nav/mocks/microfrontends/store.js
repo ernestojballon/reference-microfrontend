@@ -1,5 +1,4 @@
-import { of } from "rxjs";
+import { of } from 'rxjs';
 
-
-export const getStateObservable = ()=>of({auth:true,token:"hola from store"})
-
+export const getStateObservable = () =>
+   of({ auth: true, token: 'hola from store' });

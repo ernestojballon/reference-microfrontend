@@ -5,15 +5,9 @@ import { AppComponent } from './app.component';
 import { UiLibModule } from 'ui-lib';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    UiLibModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+   declarations: [AppComponent],
+   imports: [BrowserModule, AppRoutingModule, UiLibModule],
+   providers: [],
+   bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
