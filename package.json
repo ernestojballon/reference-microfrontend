@@ -4,21 +4,24 @@
   "description": "sample app",
   "main": "index.js",
   "scripts": {
-    "pre-commit:mf-emitter": "cd packages/mf-emitter && npm run pre-commit",
-    "pre-commit:mf-nav": "cd packages/mf-nav && npm run pre-commit",
-    "pre-commit:mf-receiver": "cd packages/mf-receiver && npm run pre-commit",
-    "pre-commit:mf-store": "cd packages/mf-store && npm run pre-commit",
-    "pre-commit:root-config": "cd packages/root-config && npm run pre-commit",
-    "pre-commit:ui-library": "cd packages/ui-library && npm run pre-commit",
-    "pre-commit":"npx lerna run --concurrency 1 --stream pre-commit --since HEAD --exclude-dependents",
+    "pre-commit": "npx lerna run --concurrency 1 --stream pre-commit --since HEAD --exclude-dependents",
+    "pre-push": "npx lerna run --concurrency 1 --stream test --since HEAD --exclude-dependents",
     "test": "echo \"Error: no test specified\" ",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "lint-staged":"lint-staged"
   },
   "author": "ernesto ballon",
   "license": "ISC",
   "devDependencies": {
-    "concurrently": "^7.0.0",
+    "concurrently": "7.0.0",
+    "eslint": "8.10.0",
+    "eslint-config-airbnb-base": "15.0.0",
+    "eslint-plugin-import": "2.25.4",
     "husky": "7.0.0",
-    "lerna": "4.0.0"
+    "lerna": "4.0.0",
+    "lint-staged": "12.3.4"
+  },
+  "lint-staged": {
+    "*.{js,json}": "eslint --cache --fix"
   }
 }

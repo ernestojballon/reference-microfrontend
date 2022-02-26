@@ -6,7 +6,7 @@
       "start": "ng serve",
       "build": "ng build",
       "watch": "ng build --watch --configuration development",
-      "test": "ng test",
+		"test": "echo ' jest tests should run here '",
       "build:single-spa:mf-nav": "ng build mf-nav --configuration production",
       "serve:single-spa:mf-nav": "ng s --project mf-nav --disable-host-check --port 4205 --live-reload false",
       "start:mock": "webpack-dev-server --config mocks/microfrontends/webpack.config.js --mode=development --env mockFile=store.js",
