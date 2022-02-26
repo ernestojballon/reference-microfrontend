@@ -11,7 +11,7 @@
     "build:single-spa:mf-emitter": "ng build mf-emitter --configuration production",
     "serve:single-spa:mf-emitter": "ng s --project mf-emitter --disable-host-check --port 4202 --live-reload false",
     "start:dev":"npm run serve:single-spa:mf-emitter",
-    "pre-commit":"echo 'pre-commit'"
+    "pre-commit":"echo 'pre-commit emitter'"
   },
   "private": true,
   "dependencies": {
