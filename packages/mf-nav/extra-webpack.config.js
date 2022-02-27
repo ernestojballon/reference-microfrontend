@@ -5,7 +5,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { merge } = require('webpack-merge');
 
 module.exports = (config, options) => {
-   const mode = config;
+   const { mode } = config;
    const standaloneExtraConfig = [
       new HtmlWebpackPlugin({
          filename: 'standalone.html',
