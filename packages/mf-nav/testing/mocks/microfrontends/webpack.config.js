@@ -2,7 +2,7 @@ const path = require('path');
 const outputDir = path.resolve(__dirname, './buildMocks');
 
 const createMockServer = (port, fileName) => ({
-   entry: `./mocks/microfrontends/${fileName}`,
+   entry: `./testing/mocks/microfrontends/${fileName}`,
    output: {
       libraryTarget: 'system',
       path: outputDir,
