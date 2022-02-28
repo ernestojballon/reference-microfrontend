@@ -9,16 +9,6 @@ import { getStateObservable } from '@ess:single-spa:mf-store';
 })
 export class AppComponent implements OnInit {
    isLogin = false;
-   constructor(private cd: ChangeDetectorRef, private router: Router) {}
-
-   ngOnInit() {
-      getStateObservable().subscribe((state: any) => {
-         this.isLogin = state.auth;
-         this.cd.detectChanges();
-         console.log('user is login in nav', state);
-      });
-   }
-
    actions = [
       {
          text: 'Home',
@@ -36,4 +26,15 @@ export class AppComponent implements OnInit {
          onclick: () => this.router.navigate(['/receiver']),
       },
    ];
+
+   constructor(private cd: ChangeDetectorRef, private router: Router) {}
+
+   ngOnInit() {
+      getStateObservable().subscribe((state: any) => {
+         this.isLogin = state.auth;
+         this.cd.detectChanges();
+         console.warn('user is login in nav', state);
+      });
+      // console.log("AppComponent");
+   }
 }
