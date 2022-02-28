@@ -70,7 +70,7 @@
       "webpack-cli": "^4.9.2"
    },
    "lint-staged": {
-      "*.{js,ts,tsx,html,css}": "eslint --cache --fix",
+      "*.{js,ts,tsx,css}": "eslint --cache --fix",
       "*.{js,ts,tsx,html,scss}": "prettier --write --ignore-unknown",
       "*.scss": "stylelint '**/*.scss' --custom-syntax postcss-scss --quiet --fix"
    }
