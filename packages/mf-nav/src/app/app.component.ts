@@ -8,7 +8,9 @@ import { getStateObservable } from '@ess:single-spa:mf-store';
    styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
-   isLogin = false;
+   isLogin = {
+      false: true,
+   };
    actions = [
       {
          text: 'Home',
@@ -40,6 +42,10 @@ export class AppComponent implements OnInit {
             resolve();
          }, 1000);
       });
+      const b = 3;
+      if (b === 2 + 1) {
+         // console.log("hola");
+      }
       // console.log("AppComponent");
    }
 }
