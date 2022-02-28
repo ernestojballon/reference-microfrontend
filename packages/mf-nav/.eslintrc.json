@@ -1,6 +1,30 @@
 {
    "root": true,
    "ignorePatterns": ["projects/**/*"],
+	"plugins": ["simple-import-sort", "import"],
+	"globals": {
+		"setTimeout": "readonly",
+		"setInterval": "readonly",
+		"clearTimeout": "readonly",
+		"clearInterval": "readonly",
+		"exports": "readonly",
+		"console": "readonly",
+		"process": "readonly",
+		"window": "readonly",
+		"describe": "readonly",
+		"it": "readonly",
+		"beforeEach": "readonly",
+		"afterEach": "readonly",
+		"beforeAll": "readonly",
+		"afterAll": "readonly",
+		"jest": "readonly",
+		"expect": "readonly",
+		"require": "readonly",
+		"module": "readonly",
+		"__dirname": "readonly",
+		"__filename": "readonly",
+		"__webpack_public_path__": "readonly"
+  },
 	"rules": {
 		"no-dupe-args": "error",
 		"no-func-assign": "error",
@@ -13,17 +37,7 @@
 				}
 			],
 		"no-debugger": "error",
-		"no-console": ["error", {
-				"allow": ["warn", "error"]
-			}
-		],
-		"sort-imports": ["error", {
-			"ignoreCase": false,
-			"ignoreDeclarationSort": false,
-			"ignoreMemberSort": false,
-			"memberSyntaxSortOrder": ["none", "all", "multiple", "single"],
-			"allowSeparatedGroups": false
-	  }],
+		"no-console": "error",
 		"no-sparse-arrays": "error",
 		"no-unreachable": "error",
 		"no-template-curly-in-string": "error",
@@ -31,7 +45,6 @@
 				"except-parens"
 			],
 		"no-constant-condition": "error",
-		"no-extra-semi": "error",
 		"no-undef": "warn",
 		"no-unused-expressions": "error",
 		"no-unused-labels": "error",
@@ -43,7 +56,21 @@
 		"no-empty-character-class": "error",
 		"no-ex-assign": "error",
 		"no-extra-boolean-cast": "error",
-		"valid-typeof": "error"
+		"valid-typeof": "error",
+		// End of line
+		"comma-style": ["warn", "last"],
+		"semi":["warn", "always"],
+		"semi-spacing": "warn",
+		"no-extra-semi": "warn",
+		"comma-dangle": ["warn", "always-multiline"],
+		// Comments
+		"no-unexpected-multiline": "error",
+		"multiline-comment-style": ["error", "starred-block"],
+		"spaced-comment": "warn",
+		// // Imports
+		"simple-import-sort/imports": "warn",
+		"simple-import-sort/exports": "warn",
+		"import/newline-after-import": "warn"
 	},
    "overrides": [
       {

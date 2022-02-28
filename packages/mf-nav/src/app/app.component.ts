@@ -33,7 +33,12 @@ export class AppComponent implements OnInit {
       getStateObservable().subscribe((state: any) => {
          this.isLogin = state.auth;
          this.cd.detectChanges();
-         console.warn('user is login in nav', state);
+         // console.warn('user is login in nav', state);
+      });
+      const a = new Promise<void>((resolve, reject) => {
+         setTimeout(() => {
+            resolve();
+         }, 1000);
       });
       // console.log("AppComponent");
    }
